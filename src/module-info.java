@@ -1,8 +1,3 @@
-/**
- * 
- */
-/**
- * 
- */
-module exercicios {
+
+module heranca_polimorfismo {
 }
