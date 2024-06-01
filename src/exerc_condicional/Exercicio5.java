@@ -16,7 +16,7 @@ public class Exercicio5 {
 		total = 0.00;
 		int num;
 
-		System.out.println("Digite o pedido: ");
+		System.out.println("Digite o número do pedido: ");
 		num = sc.nextInt();
 		System.out.print("Digite o código: ");
 		codigo = sc.nextInt();
