@@ -25,11 +25,15 @@ public class Exercicio7 {
 			System.out.println("Q3");
 		} else if (x > 0 && y < 0) {
 			System.out.print("Q4");
-		} else if (x == 0 && y > 0 || y < 0) {
+		} else if (y < 0 && x == 0 || y >  0 && x == 0) {
 			System.out.print("Eixo Y");
-		} else if(y == 0 && x > 0.0 || x < 0.0) {
-			System.out.print("Eixo X");
+		} else if(y == 0 && x == 0.0 ) {
+			System.out.print("Origem");
+		} else if(x < 0 && y == 0 || x > 0 && y == 0) {
+			System.out.println("Eixo X");
+		
 		}
+			
 
 		sc.close();
 	}
