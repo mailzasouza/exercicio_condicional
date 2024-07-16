@@ -10,10 +10,7 @@ public class Exercicio8 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double salario, totalSalario, taxa;
-		 
-		
-		
+		double salario, taxa;
 		System.out.print("Digite o valor do salário: ");
 		salario = sc.nextDouble();
 		
@@ -23,15 +20,17 @@ public class Exercicio8 {
 		}
 		else if (salario <= 3000.00) {
 			taxa = (salario - 2000.00) * 0.08;
-			System.out.printf("IRRF a pagar: ", taxa);
+			System.out.print("IRRF a pagar: "+ taxa);
 		}
+		else if (salario == 3000.01 || salario <= 4500.00) {
+			taxa = (salario - 2000.00) * 0.18;
+			System.out.print("IRRF a pagar: "+ taxa);
+		}
+		
 		else {
 			System.out.println("Tudo bem");
 		}
-		if (taxa == 0) {
-			System.out.print("Isento");
-		}	
-		
+				
 		
 		sc.close();
 
